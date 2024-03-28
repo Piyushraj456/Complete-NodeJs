@@ -28,7 +28,7 @@ const localAuthMiddleware=passport.authenticate('local',{session:false})
 
 //we can apply authentication in any route
 
-app.get('/',localAuthMiddleware,(req,res)=>{
+app.get('/',(req,res)=>{
     res.send("server is running on 3000");
 })
 
